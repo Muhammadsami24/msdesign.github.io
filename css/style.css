@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&family=Satisfy&display=swap');
+
+:root {
+    --light-bg: #222A35;
+    --dark-bg: #171E28;
+    --white: white;
+    --black: black;
+    --orange: #FE8058;
+    --blue: #39AFC9;
+}
+
+* {
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: 0.2s linear;
+    text-transform: capitalize;
+}
+
+*::selection {
+    background-color: var(--white);
+    color: var(--light-bg);
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem;
+}
+
+::-webkit-scrollbar {
+    height: 0.5rem;
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--blue);
+    border-radius: 2rem;
+}
+
+body {
+    background-color: var(--light-bg);
+}
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.btn {
+    font-family: 'Rubik', sans-serif;
+    display: inline;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background-color: var(--orange);
+    cursor: pointer;
+    color: var(--white);
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+}
+
+.btn:hover {
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+.heading {
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    font-size: 4rem;
+    color: var(--blue);
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+}
+
+.heading span {
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: var(--dark-bg);
+}
+
+.header .flex {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .flex .logo {
+    font-family: 'Satisfy', cursive;
+    font-size: 3rem;
+    color: #39AFC9;
+}
+
+.header .flex .navbar a {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    margin-left: 2rem;
+    color: var(--white);
+    font-size: 2rem;
+}
+
+.header .flex .navbar a:hover {
+    color: #FE8058;
+}
+
+#menu-btn {
+    cursor: pointer;
+    color: var(--white);
+    font-size: 2.5rem;
+    display: none;
+}
+
+.home {
+    margin-top: 8rem;
+}
+
+.home .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 1.5rem;
+}
+
+.home .row .content {
+    flex: 1 1 60rem;
+    text-align: left;
+}
+
+.home .row .image {
+    flex: 1 1 30rem;
+}
+
+.home .row .image img {
+    width: 100%;
+}
+
+
+.home .row .content h1 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    color: var(--white);
+    line-height: 1;
+    letter-spacing: 0.5rem;
+}
+
+.home .row .content h2 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: var(--orange);
+    line-height: 1;
+    letter-spacing: 0.3rem;
+    margin-bottom: 4rem;
+}
+
+.home .row .content h4 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: var(--blue);
+    line-height: 1;
+    letter-spacing: 0.2rem;
+}
+
+.count .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.count .box-container .box {
+    border-radius: .5rem;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.count .box-container .box i {
+    font-size: 3rem;
+    color: var(--orange);
+}
+
+.count .box-container .box .content h3 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: var(--white);
+    margin-bottom: .5rem;
+}
+
+.count .box-container .box .content p {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: var(--blue);
+}
+
+.about {
+    margin-top: 6rem;
+}
+
+.about .row {
+    display: flex;
+    align-items: center;
+    gap: 6rem;
+    flex-wrap: wrap;
+}
+
+.about .row .image {
+    flex: 1 1 10rem;
+}
+
+.about .row .image img {
+    width: 100%;
+}
+
+.about .row .content {
+    text-align: left;
+    flex: 1 1 50rem;
+}
+
+.about .row .content h3 {
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    font-size: 3rem;
+    color: var(--blue);
+}
+
+.about .row .content p {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 200;
+    padding: 1rem 0;
+    text-transform: none;
+    letter-spacing: 0.1rem;
+    line-height: 2;
+    font-size: 1.6rem;
+    color: var(--white);
+    margin-bottom: 2.5rem;
+}
+
+.about .row .content .btn1 {
+    margin-right: 1.5rem;
+}
+
+.services {
+    margin-top: 8rem;
+}
+
+.services .container {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.services .content {
+    background-color: var(--dark-bg);
+    border-radius: 0.5rem;
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 4rem;
+    user-select: none;
+}
+
+
+.services .content img {
+    height: 25rem;
+    width: 50%;
+}
+
+.services .content h3 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    margin: 1.5rem 0;
+    font-size: 2rem;
+    color: var(--orange);
+}
+
+.services .content p {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    line-height: 2;
+    font-size: 1.6rem;
+    color: var(--white);
+    margin-bottom: 3rem;
+}
+
+.services .content .btn2{
+    margin-bottom: 10rem;
+}
+
+
+.contact {
+    margin-top: 8rem;
+}
+
+.contact .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8rem;
+}
+
+.contact .row .image {
+    flex: 1 1 40rem;
+}
+
+.contact .row .image img {
+    width: 100%;
+}
+
+.contact .row form {
+    flex: 1 1 40rem;
+}
+
+.contact .row form .box {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    background-color: var(--dark-bg);
+    font-size: 1.8rem;
+    color: var(--white);
+    padding: 1.4rem;
+}
+
+.contact .row form span {
+    font-size: 1.6rem;
+    color: var(--white);
+}
+
+.footer{
+    margin-top: 8rem;
+    background-color: var(--dark-bg);
+    text-align: center;
+}
+
+.footer h1{
+    color: var(--orange);
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+.footer .share a{
+    margin: 0 0.3rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--white);
+    background-color: var(--black);
+}
+
+.footer .share a:hover{
+    background-color: var(--orange);
+}
+
+.footer .credit{
+    font-weight: 200;
+    margin-top: 2.5rem;
+    padding: 1.5rem;
+    padding-top: 2.5rem;
+    border-top: 0.1rem solid var(--white);
+    font-size: 2rem;
+    color: var(--white);
+}
+
+.footer .credit span{
+    margin: 0 2rem;
+    font-family: 'Satisfy', cursive;
+    color: var(--blue);
+}
+
+
+
+/* media queries  */
+
+@media (max-width:991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .home .row .content {
+        flex: 1 1 60rem;
+        text-align: center;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    #menu-btn {
+        display: inline-block;
+    }
+
+    #menu-btn.fa-times {
+        transform: rotate(180deg);
+    }
+
+
+    .header .flex .navbar {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        border-top: 0.1rem solid var(--light-bg);
+        border-bottom: 0.1rem solid var(--white);
+        background-color: var(--dark-bg);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .flex .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .header .flex .navbar a {
+        display: block;
+        margin: 2rem;
+    }
+
+
+}
+
+@media (max-width:450px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    .home .row .content h1 {
+        font-size: 6rem;
+    }
+
+    .home .row .content h2 {
+        font-size: 4rem;
+    }
+
+    .home .row .content h4 {
+        font-size: 2rem;
+    }
+
+}
