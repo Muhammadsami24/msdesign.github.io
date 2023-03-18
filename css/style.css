@@ -106,9 +106,9 @@ section {
 }
 
 .header .flex .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-family: 'Satisfy', cursive;
+    font-size: 3rem;
+    color: #39AFC9;
 }
 
 .header .flex .navbar a {
@@ -397,6 +397,11 @@ section {
     color: var(--white);
 }
 
+.footer .credit span{
+    margin: 0 2rem;
+    font-family: 'Satisfy', cursive;
+    color: var(--blue);
+}
 
 
 
