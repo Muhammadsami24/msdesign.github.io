@@ -105,10 +105,11 @@ section {
     justify-content: space-between;
 }
 
-.header .flex .logo {
-    font-family: 'Satisfy', cursive;
-    font-size: 3rem;
-    color: #39AFC9;
+.header .flex .img {
+    display: flex;
+   justify-content: center;
+   align-items: center;
+
 }
 
 .header .flex .navbar a {
